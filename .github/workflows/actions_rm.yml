@@ -18,8 +18,8 @@ jobs:
           
       - name: commit files
         run: |
-          git config --global user.email "saintglinglins@gmail.com"
-          git config --global user.name "clmarmy"
+          git config --global user.email "maria.klonner@swisstopo.ch"
+          git config --global user.name "mklonner"
           git rm -r data/$(date --date=' 1 days ago' '+%Y-%m-%d')
           git diff-index --quiet HEAD || (git commit -a -m "updated logs" --allow-empty)
           
