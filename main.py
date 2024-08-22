@@ -42,6 +42,9 @@ if __name__ == "__main__":
     #previous_date = str(date.today()-timedelta(days = 1))
     new_path = os.path.join(DIR_IN,str(date.today()))
 
+    logger.info('Remove files from 2023...')#older 6 months...')
+    #6months_ago = str(date.today()-timedelta(months = 6))
+    rm data/2023-12*.gpkg
 
     logger.info('Downloading data and preparing file...')
 
